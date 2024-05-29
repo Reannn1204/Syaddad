@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 0px;
+                background-color:sienna;
+                font-family: system-ui;
+                color:bisque;
+            }
+            header {
+                position: relative;
+                display: flex;
+            }
+            header h1 {
+                text-align: left;
+                margin-left: 2em;
+                display: inline;
+                flex: 1;
+            }
+            nav {
+                text-align: right;
+                flex: 1;
+                padding: 2em 4em;
+            }
+            nav a {
+                margin-right: 1em;
+                text-decoration: none;
+                color: bisque;
+                font-weight: bold;
+                transition: all 0.3s;
+            }
+            nav a:hover {
+                text-shadow: 1px 1px 10px white;
+            }
+            .home {
+                position: relative;
+                display: flex;
+            }
+            .home img {
+                width: 30%;
+                position: absolute;
+                flex: 1;
+                border-radius: 100%;
+                left: 15%;
+                margin-top: 5em;
+                border: 2px solid bisque;
+            }
+            .home .container {
+                flex: 1;
+                text-align: right;
+                margin: 9em 8em 0 0;
+            }
+            .container h1, p {
+                margin: 0px;
+            }
+            .container h1 {
+                font-size: 3em;
+            }
+            .container p {
+                font-size: 1.5em;
+            }
+            .container button {
+                margin-top: 2em;
+                padding: 1em 2em;
+                border-radius: 2em;
+                border: none;
+                transition: all 0.3s;
+                color: sienna;
+                font-weight: bold;
+                background-color: bisque;
+            }
+            .container button:hover {
+                box-shadow: inset 1px 1px 1em black;
+            }
+            .contact-me {
+                text-align: center;
+                padding: 10em;
+                color: bisque;
+            }
+            .contact-me a {
+                text-decoration: none;
+                color: bisque;
+                display: block;
+                margin-top: 2em;
+                transition: all 0.3s;
+                font-size: 1.1em;
+            }
+            .contact-me a:hover {
+                text-shadow: 1px 1px 10px;
+            }
+            .about-me {
+                margin-top: 20em;
+                background-color: bisque;
+                color: sienna;
+                text-align: center;
+                padding: 10em;
+            }
+            footer {
+                padding: 2em;
+                background-color: bisque;
+                color: sienna;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Syaddad</h1>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="#contact-me">Contact Me</a>
+                    <a href="#about-me">About Me</a>
+                </nav>
+            </header>
+            <div class="home">
+                <img src="https://i.pinimg.com/originals/a6/53/cc/a653cce208ebdb25f02e790a832e8bdf.jpg" alt="Syaddad">
+                <div class="container">
+                    <h1>Hello I am Syaddad</h1>
+                    <p>Junior Front End Developer</p>
+                    <button>Hire Me!</button>
+                </div>
+            </div>
+            <div class="about-me" id="about-me">
+                <h1>About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita ut voluptatem iure mollitia quia asperiores nesciunt animi, nemo officia illo quibusdam sed. Similique eum nam quod, explicabo dolorem quisquam.</p>
+            </div>
+            <div class="contact-me" id="contact-me">
+                <h1>Contact Me</h1>
+                <a href="">Phone: +62 0123-4567-8910</a>
+                <a href="">Email: Syaddad@gmail.com</a>
+                <a href="">Instagram: @Syaddad</a>
+            </div>
+            <footer>
+                <p>2024 My Portofolio. All Rights Reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>
