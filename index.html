@@ -39,29 +39,21 @@
             .home {
                 position: relative;
                 display: flex;
-            }
-            .home img {
-                width: 30%;
-                position: absolute;
-                flex: 1;
-                border-radius: 100%;
-                left: 15%;
-                margin-top: 5em;
-                border: 2px solid bisque;
+                padding-bottom: 4.6em;
             }
             .home .container {
                 flex: 1;
-                text-align: right;
-                margin: 9em 8em 0 0;
+                text-align: left;
+                margin: 9em 0em 0 8em;
             }
             .container h1, p {
                 margin: 0px;
             }
             .container h1 {
-                font-size: 3em;
+                font-size: 4em;
             }
             .container p {
-                font-size: 1.5em;
+                font-size: 2em;
             }
             .container button {
                 margin-top: 2em;
@@ -72,38 +64,119 @@
                 color: sienna;
                 font-weight: bold;
                 background-color: bisque;
+                font-size: 1.3em;
             }
             .container button:hover {
                 box-shadow: inset 1px 1px 1em black;
             }
-            .contact-me {
-                text-align: center;
-                padding: 10em;
-                color: bisque;
+            .container .social-media {
+                display: flex;
+                position: relative;
+                justify-content: end;
+                justify-items: end;
+                margin: 11em 4em 0 0;
             }
-            .contact-me a {
-                text-decoration: none;
-                color: bisque;
-                display: block;
-                margin-top: 2em;
+            .social-media .social-logo {
+                width: 50px;
+                height: 50px;
+                background-color: aliceblue;
+                margin-right: 1em;
                 transition: all 0.3s;
-                font-size: 1.1em;
+                border-radius: 2em;
+                
             }
-            .contact-me a:hover {
-                text-shadow: 1px 1px 10px;
+            .social-media .social-logo:hover {
+                width: 60px;
+                height: 60px;
+            }
+            .container2 {
+                width: 100%;
+                height: auto;
+                background-color: bisque;
+                color: sienna;
+                padding-bottom: 10.6em;
+                position: relative;
             }
             .about-me {
-                margin-top: 20em;
+                padding: 2em 3em;
+                font-size: 2em;
+                width: 40%;
+            }
+            .about-me p {
+                font-size: 0.7em;
+            }
+            .about-me img {
+                float: right;
+                position: absolute;
+                right: 10%;
+                border-radius: 100%;
+                border: 2px solid sienna;
+            }
+            .container3 {
+                padding: 2em;
+                margin-bottom: 3.4em;
+            }
+            .container3 h1 {
+                text-align: center;
+                font-size: 3em;
+            }
+            .software-skills {
+                position: relative;
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+                padding-bottom: 1em;
+            }
+            .software-logo {
+                width: 8em;
+                height: 8em;
+                background-color: aliceblue;
+                margin: 3em;
+                transition: all 0.3s;
+                border-radius: 2em;
+                border: 2px solid bisque
+                ;
+            }
+            .software-logo:hover {
+                width: 10em;
+                height: 10em;
+            }
+            .container4 {
                 background-color: bisque;
                 color: sienna;
+                padding: 2em;
+                padding-bottom: 16em;
+            }
+            .container4 h1 {
+                font-size: 3em;
                 text-align: center;
-                padding: 10em;
+            }
+            .contact-me {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                margin-top: 5em;
+            }
+            .contact {
+                width: 8em;
+                height: 8em;
+                background-color: aliceblue;
+                margin: 1em;
+                transition: all 0.3s;
+                border-radius: 100%;
+            }
+            .contact:hover {
+                width: 9em;
+                height: 9em;
             }
             footer {
+                font-weight: bold;
                 padding: 2em;
-                background-color: bisque;
-                color: sienna;
                 text-align: center;
+            }
+            footer p {
+                margin-top: 1em;
             }
         </style>
     </head>
@@ -118,25 +191,71 @@
                 </nav>
             </header>
             <div class="home">
-                <img src="https://i.pinimg.com/originals/a6/53/cc/a653cce208ebdb25f02e790a832e8bdf.jpg" alt="Syaddad">
                 <div class="container">
                     <h1>Hello I am Syaddad</h1>
-                    <p>Junior Front End Developer</p>
-                    <button>Hire Me!</button>
+                    <p>Editor</p>
+                    <a href="">
+                        <button>Hire Me!</button>
+                    </a>
+                    <div class="social-media">
+                        <a href="https://www.fb.com/l/6lp1kJRRR">
+                            <img src="https://i.pinimg.com/564x/b2/ef/68/b2ef689d1f387dfc949d0f63c3865441.jpg" alt="Facebook" class="social-logo">
+                        </a>
+                        <a href="https://www.instagram.com/m_syaddad12/">
+                            <img src="https://i.pinimg.com/564x/2a/89/fe/2a89fee1a635745cec680e88efa49bcc.jpg" alt="Instagram" class="social-logo">
+                        </a>
+                        <a href="syaddadalfattah33@gmail.com">
+                            <img src="https://i.pinimg.com/564x/c4/4b/55/c44b558d5072246d510dad9fbb0b2869.jpg" alt="Whatsapp" class="social-logo">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="about-me" id="about-me">
-                <h1>About Me</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore expedita ut voluptatem iure mollitia quia asperiores nesciunt animi, nemo officia illo quibusdam sed. Similique eum nam quod, explicabo dolorem quisquam.</p>
+            <div class="container2" id="about-me">
+                <div class="about-me">
+                    <h1>About Me</h1>
+                    <img src="https://i.pinimg.com/736x/a6/53/cc/a653cce208ebdb25f02e790a832e8bdf.jpg" alt="">
+                    <p>Saya adalah seorang editor video dan foto berpengalaman yang menggunakan perangkat seluler (hp) untuk melakukan pekerjaan. Dengan keahlian dalam mengedit video dan foto, Saya telah menciptakan karya-karya visual yang menarik dan memukau. saya memiliki kemampuan untuk menggabungkan gambar, mengatur komposisi, dan mengolah warna dengan cermat.
+
+                        Sebagai seorang editor, Saya mungkin memiliki kepekaan estetika yang tinggi dan kemampuan untuk memahami pesan yang ingin disampaikan melalui gambar dan video. Saya juga terampil dalam menggunakan berbagai alat dan perangkat lunak untuk menghasilkan hasil akhir yang profesional dan memuaskan.</p>
+                </div>
             </div>
-            <div class="contact-me" id="contact-me">
-                <h1>Contact Me</h1>
-                <a href="">Phone: +62 0123-4567-8910</a>
-                <a href="">Email: Syaddad@gmail.com</a>
-                <a href="">Instagram: @Syaddad</a>
+            <div class="container3">
+                <h1>Software Skills</h1>
+                <div class="software-skills">
+                    <img src="https://i.pinimg.com/564x/cb/ff/7f/cbff7f2cc4f1b40aa1b2b1a820fd30a3.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/fc/01/3a/fc013ad554a384049788332056917996.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/66/fb/72/66fb72c44a7b547237f7a3bd7159a01c.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/f4/cf/9f/f4cf9f0d7ecd23ae69a2b3f77db34ac7.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/d0/6a/74/d06a74823aa8f22f823a5701e90157e6.jpg" alt="" class="software-logo">
+                </div>
+                <div class="software-skills">
+                    <img src="https://i.pinimg.com/564x/95/67/12/956712f741713f9ccb6af2362392bcf0.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/95/f9/4a/95f94a61bdf1bec57be8da1cfab8f2ca.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/8b/2c/ea/8b2ceac9066556ab3d99a7371d5cc4ff.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/c3/e5/43/c3e543b9db5379d63225e5b103b0dd34.jpg" alt="" class="software-logo">
+                    <img src="https://i.pinimg.com/564x/89/bd/d4/89bdd46056728a65f026e5732670b185.jpg" alt="" class="software-logo">
+                </div>
+            </div>
+            <div class="container4">
+                <h1>Contact Me At</h1>
+                <div class="contact-me" id="contact-me">
+                    <a href="">
+                        <img src="https://i.pinimg.com/564x/b7/19/87/b7198771222c74b52116be0f7d18b700.jpg" alt="" class="contact">
+                    </a>
+                    <a href="https://www.instagram.com/m_syaddad12/">
+                        <img src="https://i.pinimg.com/564x/2a/89/fe/2a89fee1a635745cec680e88efa49bcc.jpg" alt="" class="contact">
+                    </a>
+                    <a href="https://www.fb.com/l/6lp1kJRRR">
+                        <img src="https://i.pinimg.com/564x/b2/ef/68/b2ef689d1f387dfc949d0f63c3865441.jpg" alt="" class="contact">
+                    </a>
+                    <a href="syaddadalfattah33@gmail.com">
+                        <img src="https://i.pinimg.com/564x/c4/4b/55/c44b558d5072246d510dad9fbb0b2869.jpg" alt="" class="contact">
+                    </a>
+                </div>
             </div>
             <footer>
-                <p>2024 My Portofolio. All Rights Reserved.</p>
+                <p>Permata Cimanggis Cluster Mirah, blok d6 no.16 Jalan Permata Cimanggis, Cimanggis, Tapos</p>
+                <p>2024 Syaddad Portfolio. All Rights Reserved.</p>
             </footer>
         </main>
     </body>
